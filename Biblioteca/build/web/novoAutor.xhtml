@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Novo Autor</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></link>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <h:form>
+                <div class="form-group">
+                    <label>Nome:</label> 
+                    <h:inputText value="#{manipulaAutorMB.autor.nome}" class="form-control col-md-4" />
+                </div>
+
+                <h:inputHidden value="#{manipulaAutorMB.acao}" />
+
+                <h:commandButton value="Gravar" action="#{manipulaAutorMB.gravar()}" class="btn btn-primary" /> 
+                <br></br>
+
+            </h:form>
+        </div>
+    </h:body>
+</html>
+
