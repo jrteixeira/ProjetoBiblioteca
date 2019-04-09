@@ -8,8 +8,9 @@ Bibliotecas: Driver EclipseLInk (JPA 2.1) / Driver JDBC do PostgreSQl/  postgres
         
 
 -Baixar e instalar a IDE NetBeans
+https://netbeans.org/downloads/8.0.1/?pagelang=pt_BR
 -Baixar e instalar o BD PostgreSql
--acessar o link para download
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 
 
 Criar um banco de dados com o nome "biblioteca"
@@ -61,3 +62,15 @@ TABLESPACE pg_default;
 
 ALTER TABLE public.usuario
     OWNER to postgres;
+
+
+
+----------------
+
+Abrir o projeto na IDE, e verificar se a dependencia do JAR do postgresql-42.2.5.jar está importada corretamente, caso não estiver importar o arquivo postgresql-42.2.5.jar que encontar-se na raiz do projeto.
+
+
+
+
+
+
